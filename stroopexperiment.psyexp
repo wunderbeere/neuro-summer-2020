@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.1.3">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="False" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1440, 900]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="stroopexperiment" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <TextComponent name="stroop">
+        <Param name="color" updates="set every repeat" val="$colour" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="stroop" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$word" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="response">
+        <Param name="allowedKeys" updates="constant" val="'r','g','b','y'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="response" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="feedback">
+      <TextComponent name="end_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="end_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="The experiment is now over. Thank you for your participation.&amp;#10;&amp;#10;To find your results, go to the place where the experiment is saved.&amp;#10;There should be a folder created called &quot;data&quot; where you will be able to find a csv file with your results.&amp;#10;&amp;#10;Press any key to exit this screen." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="end_experiment">
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="end_experiment" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="break_2">
+      <TextComponent name="break_instructions">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="break_instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="60" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="You know have a 1 minute break.&amp;#10;The next block will automatically start after it.&amp;#10;&amp;#10;**To skip this break, press any key.**" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="end_break">
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="end_break" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="60" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructionsText">
+      <TextComponent name="instructions">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="instructions" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Press the key corresponding to the colour of the ink, ignoring the word.&amp;#10;&amp;#10;r = red&amp;#10;g = green&amp;#10;b = blue&amp;#10;y = yellow&amp;#10;&amp;#10;Press space to continue to the next instruction screen." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="next_instructions">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="next_instructions" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructionsText2">
+      <TextComponent name="for_example">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="for_example" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.2)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="For example, if you see:" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="red">
+        <Param name="color" updates="constant" val="$[1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="red" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="yellow" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="begin_experiment">
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="begin_experiment" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="press_r">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="press_r" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.3)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="You should press &quot;r&quot;&amp;#10;&amp;#10;Position your fingers on the r,y,g and b keys&amp;#10;then press any key to start the experiment." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructionsText"/>
+    <Routine name="instructionsText2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_1">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0.0)]), OrderedDict([('word', None), ('colour', None), ('corrAns', None), ('congruent', None)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0.0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1.0)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1.0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_1" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_1"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_2"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0.0)]), OrderedDict([('word', None), ('colour', None), ('corrAns', None), ('congruent', None)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0.0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1.0)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1.0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_3"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_4"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_5">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0.0)]), OrderedDict([('word', None), ('colour', None), ('corrAns', None), ('congruent', None)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0.0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1.0)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0.0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1.0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1.0)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1.0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1.0)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_5" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_5"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_6">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_6" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_6"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_7">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_7" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_7"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_8">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop2.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_8" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_8"/>
+    <Routine name="break_2"/>
+    <LoopInitiator loopType="TrialHandler" name="block_9">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'red'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 0)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)]), OrderedDict([('word', 'blue'), ('colour', 'blue'), ('corrAns', 'b'), ('congruent', 1)]), OrderedDict([('word', 'yellow'), ('colour', 'yellow'), ('corrAns', 'y'), ('congruent', 1)]), OrderedDict([('word', 'red'), ('colour', 'red'), ('corrAns', 'r'), ('congruent', 1)]), OrderedDict([('word', 'green'), ('colour', 'green'), ('corrAns', 'g'), ('congruent', 1)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditionsStroop.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="block_9" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="block_9"/>
+    <Routine name="feedback"/>
+  </Flow>
+</PsychoPy2experiment>
