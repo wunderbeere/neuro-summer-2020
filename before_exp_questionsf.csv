@@ -1,0 +1,13 @@
+﻿Index,questionText,options,layout,type,questionWidth,responseWidth,questionColor,responseColor
+1,Please select your age range.,"0-9 ,10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-100",vert,radio,0.6,0.4,white,lightblue
+2,Is English your first language? ,"Yes, No",horiz,radio,0.6,0.4,white,lightblue
+3,What is your English level? ,"Beginner, Intermediate, Advanced",horiz,rating,0.6,0.4,white,lightblue
+4,Are you predominantly right handed? ,"Yes, No",horiz,radio,0.6,0.4,white,lightblue
+5,Do you have any visual impairments? ,"Color blind, Myopia, Hypermetropia, Other",horiz,radio,0.6,0.4,white,lightblue
+6,"Have you consumed any substance that could affect your performance (eg.: caffeine, alcohol, medication)?","Yes, No",horiz,radio,0.6,0.4,white,lightblue
+7,"Please specify your general health?  (Optional question: Choose "" skip "" if you do not wish to answer)","Injuries, Sickness,  Chronic Ilnesse,  None, Skip",horiz,radio,0.6,0.4,white,lightblue
+8,Rate how comfortable you are with the computer and typing on the keyboard (1 = uncomfortable; 10 = comfortable)," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+9,Rate your patience level. (1 = impatient; 10 = patient)," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+10,"Rate how well you are feeling. (1=unwell, depressed, etc.; 10=happy, great,etc.)"," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+11,"Rate your level of fatigue. (1 = no fatigue, 10 = very fatigued)"," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+12,Rate your stress level at the moment. (1 = Low; 10 = High)," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue

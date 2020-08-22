@@ -1,0 +1,6 @@
+﻿Index,questionText,options,layout,type,questionWidth,responseWidth,questionColor,responseColor
+13,"Rate your experience. (1 = tyring, boring, etc.; 10 = very enjoyable)"," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+14,Rate your patience level during the experiment. (1=impatient; 10=patient)," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+15,"Did you experience any fatigue? (1 = no fatigue, 10 = a lot of fatigue)"," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+16,What was your stress level during the experiment? (1=not stressed at all; 10=very stressed) ," 1 , 2 , 3 , 4 , 5 ,  6 , 7 , 8 , 9 , 10 ",horiz,rating,0.6,0.4,white,lightblue
+17,Did you notice any change in your performance throughout the experiment?,"Yes, No",horiz,radio,0.6,0.4,white,lightblue
